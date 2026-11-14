@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#203a32">
+  <meta name="description" content="A case study of STEP, a School Transparency and Engagement Portal capstone project for the KLD Central Student Government.">
+  <title>STEP Case Study — Edward Miguel D. Quintos</title><link rel="stylesheet" href="../assets/css/site.css"><script src="../assets/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <a class="brand" href="../#top" aria-label="Edward Quintos, home">
+  <span class="brand-mark" aria-hidden="true">EQ</span>
+  <span><span class="brand-name">EDWARD QUINTOS</span><span class="brand-sub">INFORMATION SYSTEMS</span></span>
+</a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+  <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+    <a href="../#top">Home</a>
+    <a href="../projects/index.html" aria-current="page">Projects</a>
+    <a href="../#experience">Experience</a>
+    <a href="../#skills">Skills</a>
+    <a class="nav-contact" href="../#contact">Contact</a>
+  </nav>
+</header>
+<main id="main">
+  <section class="case-study-hero"><div class="shell">
+    <div class="breadcrumb"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Projects</a><span aria-hidden="true">/</span><span>STEP</span></div>
+    <p class="eyebrow">CAPSTONE CASE STUDY · INFORMATION SYSTEMS</p>
+    <h1>STEP — School Transparency and Engagement Portal</h1>
+    <p class="lead">A web-based student-government portal designed to make project information, financial records, and organizational activity easier to access, review, and verify.</p>
+    <div class="case-meta-grid">
+      <div class="case-meta"><span>Project context</span><strong>Undergraduate team capstone</strong></div>
+      <div class="case-meta"><span>Client</span><strong>KLD Central Student Government</strong></div>
+      <div class="case-meta"><span>Team</span><strong>Four BSIS students</strong></div>
+      <div class="case-meta"><span>My contribution</span><strong>Requirements, coordination, research, evaluation, presentation</strong></div>
+    </div>
+  </div></section>
+
+  <section class="case-study-content shell">
+    <div class="case-layout">
+      <div class="case-main">
+        <section class="case-section" id="overview"><p class="eyebrow">01 · PROJECT OVERVIEW</p><h2>Bringing scattered records into one reviewable system.</h2><p>STEP was developed as a capstone project for the Central Student Government of Kolehiyo ng Lungsod ng Dasmariñas. The existing process relied on different channels for proposals, financial records, meeting information, announcements, and student feedback. This made it harder for students and council members to locate consistent information and review the history behind decisions.</p><p>The project proposed a centralized web portal where records could be submitted, reviewed, approved, and made visible according to each user's role. Its financial-record integrity design uses SHA-256 hash chaining so later changes to linked approved records can be detected. This makes the records tamper-evident; it does not make the system a decentralized blockchain or prove that every original entry is correct.</p></section>
+
+        <section class="case-section" id="problem"><p class="eyebrow">02 · THE PROBLEM</p><h2>Information was fragmented across tools and processes.</h2><div class="problem-grid"><div class="problem-card"><strong>Unclear financial history</strong><span>Transactions, amounts, and supporting evidence were stored in separate files and channels.</span></div><div class="problem-card"><strong>Fragmented records</strong><span>Project decisions, meeting information, and announcements were distributed across different platforms.</span></div><div class="problem-card"><strong>Inconsistent feedback</strong><span>Occasional polls and forms made student feedback harder to collect consistently.</span></div></div></section>
+
+        <section class="case-section" id="solution"><p class="eyebrow">03 · THE SOLUTION</p><h2>A centralized portal with role-based review.</h2><p>The system brings project proposals, a financial ledger with evidence, approval and rejection workflows, meeting records, ratings, concerns, and audit/reporting features into one application. Role-based access control separates the work of preparing records, reviewing submissions, administering the platform, and viewing approved information.</p><div class="feature-grid"><div class="feature-card"><strong>Project & finance records</strong><span>Submit project proposals, ledger entries, and supporting evidence.</span></div><div class="feature-card"><strong>Review workflows</strong><span>Route submissions for approval or rejection with reasons and role-specific access.</span></div><div class="feature-card"><strong>Student engagement</strong><span>Provide access to approved information and ways to submit ratings and concerns.</span></div></div><div class="workflow" aria-label="Simplified record workflow"><div class="workflow-step"><b>01</b><strong>Prepare</strong><span>Officers create records and attach evidence.</span></div><div class="workflow-step"><b>02</b><strong>Review</strong><span>Authorized administrators inspect submissions.</span></div><div class="workflow-step"><b>03</b><strong>Approve or return</strong><span>Records are approved or rejected with a reason.</span></div><div class="workflow-step"><b>04</b><strong>Publish & verify</strong><span>Approved records become visible by role; linked changes can be detected.</span></div></div></section>
+
+        <section class="case-section" id="roles"><p class="eyebrow">04 · USERS & ACCESS</p><h2>Permissions reflect organizational responsibilities.</h2><table class="role-table"><tbody><tr><th>Member</th><td>Students and teachers who view approved projects, financial records, evidence, and meetings, and can submit ratings or concerns.</td></tr><tr><th>Council</th><td>CSG officers who create and manage project proposals, ledger entries, supporting proof, and meeting records, then submit items for review.</td></tr><tr><th>Admin</th><td>The CSG Adviser and SADU Head, who review submissions, approve or reject with a reason, and oversee relevant records and logs.</td></tr><tr><th>Super Admin</th><td>System-level account and permission management, audit/reporting functions, and administrative oversight.</td></tr></tbody></table></section>
+
+        <section class="case-section" id="technology"><p class="eyebrow">05 · TECHNOLOGY</p><h2>Technology used by the project team.</h2><p>The team described an iterative Agile development approach and used the following technologies in the project. This list represents the team's overall implementation stack, not a claim that I individually developed every component.</p><div class="tech-list"><span>Laravel 11 / PHP</span><span>React</span><span>Inertia.js</span><span>MySQL</span><span>Supabase</span><span>SHA-256 hash chaining</span></div></section>
+
+        <section class="case-section" id="evaluation"><p class="eyebrow">06 · TESTING & EVALUATION</p><h2>Positive reported results across testing and quality evaluation.</h2><p>The capstone report records that all listed unit, integration, system, and non-functional test cases were marked as passed. It also reports an overall ISO/IEC 25010 quality-evaluation mean of 4.43 out of 5 from 165 respondents.</p><div class="result-panel"><div class="result-metric"><strong>4.43 / 5</strong><span>Overall reported ISO/IEC 25010 quality-evaluation mean</span></div><div class="result-metric"><strong>165</strong><span>Evaluation respondents reported in the capstone</span></div></div><p class="source-note">These are team-reported capstone results. They describe the evaluation conducted for this project and do not establish long-term impact beyond the study.</p></section>
+
+        <section class="case-section" id="contribution"><p class="eyebrow">07 · MY CONTRIBUTION</p><h2>My work centered on coordination, documentation, and presenting the project.</h2><div class="contribution-panel"><h3>Areas of involvement</h3><ul class="clean-list"><li>Requirements gathering and documentation.</li><li>Client communication and coordination.</li><li>Research, evaluation, and presentation.</li></ul><p style="margin-top:14px">STEP was completed by a four-person BSIS team. This section describes my own areas of involvement and does not attribute the team's full development work to me.</p></div></section>
+      </div>
+      <aside class="case-sidebar" aria-label="Case study sections"><h3>On this page</h3><nav><a href="#overview">Project overview</a><a href="#problem">The problem</a><a href="#solution">The solution</a><a href="#roles">Users & access</a><a href="#technology">Technology</a><a href="#evaluation">Testing & evaluation</a><a href="#contribution">My contribution</a></nav><p class="sidebar-note">Project details are summarized from the capstone report. Personal contribution statements reflect my own involvement.</p></aside>
+    </div>
+    <div style="margin-top:40px"><a class="text-link" href="index.html">← Back to all projects</a></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <a href="../#top">EDWARD MIGUEL D. QUINTOS</a>
+  <span>© <span data-year>2026</span> · CAVITE, PHILIPPINES</span>
+  <a class="back-top" href="../#top">BACK TO TOP ↑</a>
+</footer>
+</body>
+</html>
